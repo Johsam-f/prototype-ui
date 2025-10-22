@@ -51,7 +51,7 @@ export default function Payment() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 text-black">
       {/* Navigation */}
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-6 py-4">
@@ -73,7 +73,7 @@ export default function Payment() {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Booking Summary */}
-          <div className="bg-white rounded-xl shadow-lg p-6">
+          <div className="bg-gray-200 rounded-xl shadow-lg p-6">
             <h2 className="text-xl font-bold text-slate-900 mb-4">Booking Summary</h2>
             
             <div className="space-y-3 mb-6">
@@ -128,7 +128,7 @@ export default function Payment() {
           </div>
 
           {/* Payment Methods */}
-          <div className="bg-white rounded-xl shadow-lg p-6">
+          <div className="bg-gray-200 rounded-xl shadow-lg p-6">
             <h2 className="text-xl font-bold text-slate-900 mb-6">Select Payment Method</h2>
             
             <div className="space-y-4 mb-6">
