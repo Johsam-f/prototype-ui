@@ -49,7 +49,7 @@ export default function Login() {
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+                className="w-full px-4 py-3 border text-black border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
                 placeholder="your.email@example.com"
                 required
               />
@@ -64,7 +64,7 @@ export default function Login() {
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+                className="w-full text-black px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
                 placeholder="Enter your password"
                 required
               />
@@ -83,12 +83,14 @@ export default function Login() {
               </a>
             </div>
 
-            <button
-              type="submit"
-              className="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 px-4 rounded-lg font-semibold transition-colors transform hover:scale-[1.02] active:scale-[0.98]"
-            >
-              Sign In
-            </button>
+            <Link href={"/booking"}>
+                <button
+                type="submit"
+                className="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 px-4 rounded-lg font-semibold transition-colors transform hover:scale-[1.02] active:scale-[0.98]"
+                >
+                    Sign In   
+                </button>
+            </Link>
           </form>
 
           <div className="mt-8 pt-6 border-t border-slate-200">
