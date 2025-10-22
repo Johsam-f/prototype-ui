@@ -61,7 +61,7 @@ export default function Payment() {
             </Link>
             <div className="flex items-center gap-4">
               <Link href="/booking" className="text-slate-600 hover:text-slate-900">
-                ← Back to Booking
+                 Back
               </Link>
             </div>
           </div>
