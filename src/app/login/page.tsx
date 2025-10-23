@@ -14,7 +14,7 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center p-6">
+    <div className="min-h-screen bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center p-6">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div 
@@ -109,7 +109,7 @@ export default function Login() {
 
           <div className="mt-8 text-center">
             <p className="text-slate-600">
-              Don't have an account?{" "}
+              Don&apos;t have an account?{" "}
               <a href="#" className="text-amber-600 hover:text-amber-700 font-medium">
                 Contact Administrator
               </a>

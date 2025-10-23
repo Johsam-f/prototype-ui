@@ -29,14 +29,30 @@ export default function Payment() {
     bankName: ""
   });
 
-  const stored = localStorage.getItem('bookingData');
-  useEffect( () => {
-    setBookingData(JSON.parse(stored!));
-  }, [stored]);
+  useEffect(() => {
+    const loadBookingData = () => {
+      if (typeof window !== 'undefined') {
+        const stored = localStorage.getItem('facilityBookingData') || localStorage.getItem('bookingData');
+        if (stored) {
+          try {
+            const parsedData = JSON.parse(stored);
+            setBookingData(parsedData);
+          } catch (error) {
+            console.error('Error parsing booking data:', error);
+          }
+        }
+      }
+    };
+
+    // Use setTimeout to defer the state updates
+    const timeoutId = setTimeout(loadBookingData, 0);
+    
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   if (!bookingData) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-slate-900 mb-4">No Booking Data Found</h1>
           <Link href="/booking" className="text-amber-600 hover:text-amber-700">
