@@ -28,14 +28,11 @@ export default function Payment() {
     accountNumber: "",
     bankName: ""
   });
-  const [isProcessing, setIsProcessing] = useState(false);
 
-  useEffect(() => {
-    const stored = localStorage.getItem('bookingData');
-    if (stored) {
-      setBookingData(JSON.parse(stored));
-    }
-  }, []);
+  const stored = localStorage.getItem('bookingData');
+  useEffect( () => {
+    setBookingData(JSON.parse(stored!));
+  }, [stored]);
 
   if (!bookingData) {
     return (
@@ -235,10 +232,9 @@ export default function Payment() {
             )}
 
             <button
-              disabled={isProcessing}
-              className="w-full bg-amber-600 hover:bg-amber-700 disabled:bg-slate-400 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
+              className="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
             >
-              {isProcessing ? "Processing Payment..." : `Pay MWK ${bookingData.total.toLocaleString()}`}
+              { `Pay MWK ${bookingData.total.toLocaleString()}`}
             </button>
           </div>
         </div>
