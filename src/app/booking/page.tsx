@@ -21,7 +21,7 @@ const apartments: Apartment[] = [
     roomNumber: "A101",
     price: 50000,
     facilities: ["WiFi", "Air Conditioning", "Private Bathroom"],
-    image: "/standard.jpg",
+    image: "/standard.jpeg",
     available: true
   },
   {
@@ -30,7 +30,7 @@ const apartments: Apartment[] = [
     roomNumber: "A102",
     price: 50000,
     facilities: ["WiFi", "Air Conditioning", "Private Bathroom", "TV"],
-    image: "/standard.jpg",
+    image: "/standard.jpeg",
     available: true
   },
   {
@@ -39,7 +39,7 @@ const apartments: Apartment[] = [
     roomNumber: "B201",
     price: 75000,
     facilities: ["WiFi", "Air Conditioning", "Private Bathroom", "TV", "Refrigerator", "Kitchenette"],
-    image: "/premium.jpg",
+    image: "/premium.jpeg",
     available: true
   },
   {
@@ -48,7 +48,7 @@ const apartments: Apartment[] = [
     roomNumber: "B202",
     price: 75000,
     facilities: ["WiFi", "Air Conditioning", "Private Bathroom", "TV", "Refrigerator", "Kitchenette", "Balcony"],
-    image: "/premium.jpg",
+    image: "/premium.jpeg",
     available: false
   },
   {
@@ -57,7 +57,7 @@ const apartments: Apartment[] = [
     roomNumber: "C301",
     price: 120000,
     facilities: ["WiFi", "Air Conditioning", "Private Bathroom", "Smart TV", "Refrigerator", "Full Kitchen", "Balcony", "Washing Machine", "Living Room"],
-    image: "/luxury.jpg",
+    image: "/luxury.jpeg",
     available: true
   },
   {
@@ -66,7 +66,7 @@ const apartments: Apartment[] = [
     roomNumber: "C302",
     price: 120000,
     facilities: ["WiFi", "Air Conditioning", "Private Bathroom", "Smart TV", "Refrigerator", "Full Kitchen", "Balcony", "Washing Machine", "Living Room", "Jacuzzi"],
-    image: "/luxury.jpg",
+    image: "/luxury.jpeg",
     available: true
   }
 ];
