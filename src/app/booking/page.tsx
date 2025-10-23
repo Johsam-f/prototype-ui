@@ -145,7 +145,7 @@ export default function Booking() {
             <li>Select your desired check-in and check-out dates.</li>
             <li>Choose the number of guests and the apartment class.</li>
             <li>Pick an available apartment from the list.</li>
-            <li>Click on "Book Now" to proceed to payment.</li>
+            <li>{`Click on "Book Now" to proceed to payment.`}</li>
             </ol>
         </div>
 
@@ -221,7 +221,7 @@ export default function Booking() {
               } ${!apartment.available ? 'opacity-50' : ''}`}
               onClick={() => apartment.available && setSelectedApartment(apartment)}
             >
-              <div className="relative h-48 bg-gradient-to-br from-slate-200 to-slate-300">
+              <div className="relative h-48 bg-linear-to-br from-slate-200 to-slate-300">
                 <Image
                   src={apartment.image}
                   alt={`Apartment ${apartment.roomNumber}`}
